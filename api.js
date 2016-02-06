@@ -10,7 +10,9 @@ module.exports = function(wagner) {
 
   api.get('/phing', wagner.invoke(function() {
     return function(req, res) {
-      res.json({  });
+      res.status(status.CREATED);
+      res.json({ key:"123" });
     };
   }));
+  return api;
 }
